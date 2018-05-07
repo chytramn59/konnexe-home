@@ -1,0 +1,56 @@
+body{
+	margin:auto;
+	padding:0;
+	background-color:#F8F8F8;
+}
+.row{
+	padding:3px;
+}
+i
+{
+ background-color: black;
+ border-radius: 50%;
+ border: 1x solid grey;
+ padding:10px;
+}
+.navbar-brand{
+	padding-right:974px;
+	color:#25877B !important;
+}
+#tweet{
+	padding:5px;
+	color:white;
+}
+#link{
+	padding:5px;
+	margin-top:12px;
+	color:white;
+	margin-left:4px;
+}
+#col{
+color:#25877B;
+font-size:18px;	
+}
+#form{
+	border:1px solid grey;
+}
+#text{
+	margin-bottom:15px;
+	margin-top:15px;
+}
+/*.top{
+	border-bottom:1px solid black;
+}*/
+.button {
+    background-color:#1E51AC; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1 {border-radius-size: 23px;}
