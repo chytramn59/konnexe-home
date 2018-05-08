@@ -8,61 +8,117 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/signup.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script type="text/javascript" src="./js/signup.js"></script>
 </head>
 <body>
-<div class="row">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">KONNEXE</a>
-       <a href="https://www.twitter.com"><i id="tweet" class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com"><i id="link" class="fa fa-linkedin" aria-hidden="true"></i></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a id="col" href="#">Log In</a></li>
-        <li><a id="col" href="#">Sign Up</a></li>
+
+  <div class="row">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <!--  <a class="navbar-brand" href="#">KONNEXE</a> -->
+          <img src="./images/Page 1.png">
+          <a href="https://www.twitter.com"><i id="tweet" class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com"><i id="link" class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="col" href="#">Log In</a></li>
+            <li><a id="col" href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-md-2"></div>
+    <div id="form" class="col-sm-8 col-md-8">
+      <form  class="form-horizontal" action="/action_page.php">
+        <div class="row">
+          <div class="col-sm-4 col-md-6">
+            <h1 style="color:#74839A">Sign up with Email</h1>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <h2 style="color:#74839A">Or</h2>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <button class="button button1"><p class="fa fa-linkedin" aria-hidden="true"></p>Connect with Linkedin</button>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+         <div class="col-sm-9 col-md-9">  
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder='First Name ' name="First Name">
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder="Last Name" name="Last Name">
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder="Title" name="Title">
+          </div> 
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder="Company" name="Company">
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="number" class="form-control" id="number" placeholder="Phone" name="Phone">
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder="City" name="City">
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="Email" class="form-control" id="email" placeholder="Email" name="Email">
+          </div> 
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder="Industry" name="Industry">
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <input type="text" class="form-control" id="text" placeholder="Company Size" name="Company Size">
+          </div>
+          <div id="check" class="col-sm-12 col-md-12">
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+            <label for="checkbox_id">I have a referral code</label>
+          </div>
+          <div id="check" class="col-sm-12 col-md-12">
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+            <label for="checkbox_id">I agree to Konnexe <a>Terms of service</a></label>
+          </div>
+          <div id="r" class="col-sm-12 col-md-12">
+            <textarea name="comment" form="usrform">I'am not a robot</textarea>
+          </div>
+          <div class="col-sm-12 col-md-12">
+           <button id="but" class="btn btn-success">Sign up</button>
+         </div>
+       </div>
+       <div class="col-sm-3 col-md-3"></div>
+     </div>
+   </form>
+ </div>
+ <div class="col-sm-2 col-md-2"></div> 
+</div>
+<div class="row" id="mid"></div>
+<footer>
+  <div class="row last">
+    <div class="col-sm-6 col-md-6">
+      <ul>
+        <li>Privacy Police</li>
+        <li>User Agreement</li>
+        <li>About</li>
       </ul>
     </div>
-  </div>
-</nav>
-</div>
-<div class="container">
-  <div class="col-sm-2 col-md-2"></div>
-  <div id="form" class="col-sm-8 col-md-8">
-    <form  class="form-horizontal" action="/action_page.php">
-      <div class="top">
-      <div class="col-sm-6">
-        <h1 style="color:#74839A">Sign up with Email</h1>
-      </div>
-      <div class="col-sm-2">
-        <h2 style="color:#74839A">Or</h2>
-      </div>
-      <div class="col-sm-4">
-        <!-- <button type="button" style="margin-top:23px" class="btn btn-primary">Connect with Linkedin</button> -->
-        <button class="button button1">Connect with Linkedin</button>
-      </div>
+    <div class="col-sm-6 col-md-6">
+      <footer> &copy; COPYRIGHT KONNEXE.ALL RIGHTS RESERVED</footer>
     </div>
-      <div class="col-sm-12" style="border-top:1px solid grey">
-        <input type="text" class="form-control" id="text" placeholder="First Name" name="First NameS">
-      </div>
-
-      <div class="col-sm-12">
-        <input type="text" class="form-control" id="text" placeholder="Last Name" name="Last Name">
-      </div>
-
-      <div class="col-sm-12">
-        <input type="text" class="form-control" id="text" placeholder="Title" name="Title">
-      </div>
-    </form>
   </div>
-  <div class="col-sm-2 col-md-2"></div>
-</div>
+</footer>
+
 </body>
-</html>
+</html>  
+

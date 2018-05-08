@@ -2,6 +2,7 @@ body{
 	margin:auto;
 	padding:0;
 	background-color:#F8F8F8;
+	font-family: 'Open Sans', sans-serif;
 }
 .row{
 	padding:3px;
@@ -13,13 +14,14 @@ i
  border: 1x solid grey;
  padding:10px;
 }
-.navbar-brand{
-	padding-right:974px;
-	color:#25877B !important;
+img{
+	padding-right:910px;
+	/*color:#25877B !important;*/
 }
 #tweet{
 	padding:5px;
 	color:white;
+	/*margin-left: -27px; /*just added*/*/
 }
 #link{
 	padding:5px;
@@ -30,9 +32,11 @@ i
 #col{
 color:#25877B;
 font-size:18px;	
+ /*margin-top: -36px;*/
+  /*margin-top: -42px;*/
 }
 #form{
-	border:1px solid grey;
+	border:1px solid #d9d9d9;
 }
 #text{
 	margin-bottom:15px;
@@ -53,4 +57,48 @@ font-size:18px;
     margin: 4px 2px;
     cursor: pointer;
 }
-.button1 {border-radius-size: 23px;}
+.button1 {border-radius: 25px;}
+/*hr {
+   size:50;
+}*/
+hr {
+    border: none;
+    height: 1px;
+    width:100%;
+    /* Set the hr color */
+    color:  #d9d9d9; /* old IE */
+    background-color:  #d9d9d9; /* Modern Browsers */
+}
+p{
+	padding-right:20px;
+}
+#check{
+	margin-left: 14px;
+}
+#r{
+	margin-left:2px;
+}
+#but {
+    background-color:#1C8B7C; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 8px;
+    cursor: pointer;
+    border-radius:23px;
+}
+.last{
+	background-color:#D0D9D8 !important; 
+	padding:50px;
+}
+.last ul li{
+	display:inline;
+	padding:5px;
+}
+#mid{
+	padding:50px;
+}
